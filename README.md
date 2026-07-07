@@ -1,2 +1,38 @@
 # CubeSatVision
-CubeSatVision is an onboard AI vision processing framework designed for CubeSats. A dedicated AI processor performs computationally intensive image processing tasks—including resident space object (RSO) detection, star extraction, and star tracker-based attitude determination—while the onboard computer (OBC) manages spacecraft subsystems using the processed results.
+
+AI Processor-Based Vision Navigation System for CubeSats
+
+## Overview
+
+CubeSatVision is an onboard computer vision framework that separates computationally intensive image processing from the onboard computer (OBC).
+
+The AI Processor performs:
+
+- Space Object Detection
+- Space Object Tracking
+- Star Extraction
+- Star Identification
+- Plate Solving
+- Attitude Determination
+
+The OBC receives processed navigation data and interfaces with spacecraft subsystems such as ADCS and TTC.
+
+## Architecture
+
+Camera
+
+↓
+
+AI Processor
+
+↓
+
+Navigation Solution
+
+↓
+
+OBC
+
+↓
+
+ADCS
